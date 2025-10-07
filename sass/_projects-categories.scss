@@ -16,6 +16,8 @@
   }
   &__right {
     width: auto;
+    display: flex;
+    align-items: center;
     @media only screen and (max-width: $bp-large) {
       margin: 4rem 0;
     }

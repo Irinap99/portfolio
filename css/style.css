@@ -352,7 +352,9 @@ p {
       width: 100%; } }
 
 .projects-categories__right {
-  width: auto; }
+  width: auto;
+  display: flex;
+  align-items: center; }
   @media only screen and (max-width: 1000px) {
     .projects-categories__right {
       margin: 4rem 0; } }
