@@ -274,7 +274,7 @@ p {
     gap: 6rem;
     width: 70%;
     position: relative;
-    padding-top: 2rem;
+    padding: 2rem;
     border-right: 1px solid rgba(251, 191, 36, 0.6);
     transform: skew(-20deg); }
     @media only screen and (max-width: 1300px) {
@@ -332,7 +332,7 @@ p {
     transform: all 0.3s; }
   .footer__copyright {
     margin-top: auto;
-    padding: 1rem; }
+    padding: 2rem; }
     .footer__copyright p {
       font-size: 1.4rem;
       color: #a1a1aa; }
