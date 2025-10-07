@@ -1,0 +1,31 @@
+.header {
+  height: 8rem;
+  margin: 0 auto;
+  background-color: $grey-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__link a:link,
+  &__link a:visited {
+    text-decoration: none;
+    font-weight: 300;
+    color: $grey-light-2;
+    text-transform: uppercase;
+    font-size: 2rem;
+    transition: all 0.3s;
+  }
+
+  &__link a:hover,
+  &__link a:active {
+    color: $grey-light-3;
+  }
+}

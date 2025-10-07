@@ -1,0 +1,109 @@
+.footer {
+  border-top: 1px solid rgba($amber-main, 0.4);
+  display: flex;
+  gap: 2rem;
+  @media only screen and (max-width: $bp-largest) {
+    flex-direction: column;
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    width: 70%;
+    position: relative;
+    padding-top: 2rem;
+    border-right: 1px solid rgba($amber-main, 0.6);
+    transform: skew(-20deg);
+    @media only screen and (max-width: $bp-largest) {
+      width: auto;
+      gap: 10rem;
+      border-right: none;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      gap: 5rem;
+    }
+  }
+
+  &__heading {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: $grey-light-3;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__work-box,
+  &__contact-box {
+    transform: skew(20deg);
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    // transform: skew(20deg);
+
+    span {
+      display: flex;
+      align-items: center;
+      color: $amber-main;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $grey-light-4;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.2;
+
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+    }
+  }
+  &__link:hover,
+  &__link:active {
+    transform: translateY(-1px);
+  }
+  &__contact-element {
+    display: flex;
+    transition: all 0.3s;
+    gap: 2px;
+  }
+  &__contact-element:hover,
+  &__contact-element:active > * {
+    transform: translateY(-1px);
+  }
+
+  &__icon {
+    font-size: 2rem;
+    font-weight: 300;
+    color: $amber-main;
+    transform: all 0.3s;
+  }
+
+  // &__line {
+  //   width: 1px;
+  //   height: 100%;
+  //   background-color: $amber-main;
+  //   transform: rotate(-45deg);
+  // }
+
+  &__copyright {
+    margin-top: auto;
+    padding: 1rem;
+    p {
+      font-size: 1.4rem;
+      color: $grey-light-2;
+    }
+  }
+}

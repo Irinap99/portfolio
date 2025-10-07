@@ -1,0 +1,135 @@
+.projects-cover {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  margin-bottom: 8rem;
+  @media only screen and (max-width: $bp-medium) {
+    height: 120vh;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
+  &__imgbox {
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+    clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 4rem;
+      width: 100%;
+      clip-path: none;
+    }
+
+    &--htmlcss {
+      background-image: url(../../img/htmlcsss-projects/htmlcss-title-img.jpg);
+    }
+    &--javascript {
+      background-image: url(../../img/javascript-projects/22.jpg);
+    }
+    &--uiux {
+      background-image: url(../../img/uiux-projects/figma-title-img.jpeg);
+    }
+
+    &--title {
+      color: $amber-main;
+      font-weight: 200;
+      font-size: 6rem;
+      margin-left: 2rem;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 4rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+  &__graphic-element-box {
+    height: 10rem;
+    margin: 0 auto;
+    @media only screen and (max-width: $bp-largest) {
+      height: 5rem;
+    }
+  }
+  &__graphic-element {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__textbox {
+    width: 70%;
+    height: 90vh;
+    line-height: 1.1;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media only screen and (max-width: $bp-small) {
+      width: auto;
+    }
+  }
+  &__title {
+    margin-bottom: 4rem;
+    text-align: center;
+    @media only screen and (max-width: $bp-largest) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__text {
+    margin-bottom: 2rem;
+  }
+  &__text-skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.6rem;
+    margin-bottom: 6rem;
+    @media only screen and (max-width: $bp-largest) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__text-skill-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__cta:link,
+  &__cta:visited {
+    color: $amber-main;
+    font-weight: 200;
+    font-size: 2.4rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    gap: 0.6rem;
+
+    span {
+      font-size: 2.2rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
+  }
+
+  &__cta:hover,
+  &__cta:active {
+    color: $grey-light-3;
+  }
+}

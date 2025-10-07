@@ -1,0 +1,106 @@
+.projects-categories {
+  &__container {
+    display: flex;
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+    }
+  }
+  &__right {
+    width: auto;
+    @media only screen and (max-width: $bp-large) {
+      margin: 4rem 0;
+    }
+  }
+
+  &__box {
+    width: 30rem;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+
+    &--1 {
+      background-image: url(../img/html-css-projects.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &--2 {
+      background-image: url(../img/javascript.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &--3 {
+      background-image: url(../img/photoshop.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &--4 {
+      background-image: url(../img/figma.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-weight: 300;
+    color: $grey-light-2;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $amber-main;
+
+    .projects__box:hover {
+      width: 40rem;
+    }
+  }
+
+  &__text-container {
+    // max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+  &__text-heading {
+    text-align: center;
+    margin-bottom: 6rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__text-skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.6rem;
+  }
+  &__text-skill {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}

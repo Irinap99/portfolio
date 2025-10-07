@@ -1,0 +1,37 @@
+@mixin container {
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@mixin gradient-heading {
+  background-image: linear-gradient(to right, $grey-light-4, $grey-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin gradient-heading-dark {
+  background-image: linear-gradient(
+    to right,
+    $grey-light-4,
+    $grey-background-2
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin gradient-text {
+  background-image: linear-gradient(to right, $grey-light-4, $grey-light-2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin icon-styling {
+  font-size: 2rem;
+  font-weight: 300;
+  color: $amber-main;
+  margin-right: 0.5rem;
+}
